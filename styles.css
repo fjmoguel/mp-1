@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Montserrat', 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+    background-color: aliceblue; 
+    color: darkslategray; 
+}
+
+header, footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: lightsteelblue;
+    color: ghostwhite;
+    text-align: left;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: lightblue;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav li {
+    background-color: gainsboro; 
+    padding: 10px;
+    margin: 15px 0; 
+    border-radius: 5px;
+}
+
+nav ul li {
+    margin-bottom: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: calc(14px + 0.5vw);
+    font-weight: bold;
+}
+
+main {
+    width: 70%;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: azure;
+}
+
+#index main {
+    background-color: lavender; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+th, td {
+    border: 2px solid lightsteelblue;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+
+.section {
+    margin: 30px 0;
+}
+
+
+#hobbies ul {
+    margin-top: 20px;
+}
+
+ul ul {
+    margin-left: 20px;
+}
+
+h2 {
+    font-size: calc(18px + 1vw);
+    color: darkslateblue;
+}
+
+p {
+    font-size: calc(14px + 0.5vw);
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav li {
+        font-size: calc(10px + 0.8vw);
+        padding: 5px 10px;
+        margin: 5px;
+        flex: 1 1 auto;
+        min-width: 80px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav a {
+        font-size: calc(8px + 0.8vw);
+    }
+
+    nav ul li {
+        margin-bottom: 1%;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+#profile-image {
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: calc(16px + 1vw);
+    color: darkslateblue;
+}
+
+#dessert-aesthetic main {
+    background-color: moccasin; 
+}
+
+#dessert-aesthetic header,
+#dessert-aesthetic footer {
+    background-color: saddlebrown; 
+    color: floralwhite; 
+}
+
+#dessert-aesthetic nav {
+    background-color: peru;
+}
+
+#dessert-aesthetic nav li {
+    background-color: wheat; 
+}
+
+#dessert-aesthetic nav a {
+    color: sienna; 
+}
+
+
+.project {
+    background-color: linen;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 5px solid sienna; 
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: darkgoldenrod; 
+}
+
+.project a {
+    text-decoration: none;
+    color: sienna;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 750px) {
+    #dessert-aesthetic nav ul {
+        background-color: burlywood;
+    }
+}
+
+
+#calculator-section {
+    background: none;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: url('images/texas_background.jpg');
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid saddlebrown;
+}
+
+
+#calculator input {
+    width: 80%;
+    padding: 8px;
+    border: 2px solid saddlebrown;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+#calculator button {
+    background: url('images/sheriff-badge.png') no-repeat center center;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    border: none;
+}
+
+
+#output-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: url('images/texas.png') no-repeat center center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#output {
+    position: absolute;
+    font-weight: bold;
+    color: saddlebrown;
+    text-align: center;
+}
+
+
+
+#certifications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: none;
+}
+
+#certifications-table td {
+    padding: 15px;
+    text-align: left;
+    border: none;
+    vertical-align: middle;
+}
+
+.cert-icon {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cert-issuer {
+    font-size: 14px;
+    color: sienna;
+}
+
+.cert-date {
+    font-size: 14px;
+    color: dimgray;
+}
+
+.cert-link {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 5px;
+    background-color: peru;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cert-link:hover {
+    background-color: saddlebrown;
+}
+
+#skills-list {
+    margin-top: 30px;
+}
+
+#skills-ul {
+    margin-top: 10px;
+    list-style-type: square;
+}
+
+#skills-ul li {
+    margin-bottom: 10px;
+}
+
+
+#credits main {
+    background-color: lightgray; 
+    color: midnightblue; 
+}
+
+#credits header, #credits footer {
+    background-color: midnightblue;
+    color: white;
+}
+
+#credits nav {
+    background-color: slategray;
+}
+
+#credits nav ul {
+    background-color: gainsboro;
+}
+
+#credits nav li {
+    background-color: lightgray;
+}
+
+#credits nav a {
+    color: midnightblue;
+}
+
+#credits a {
+    color: navy;
+    text-decoration: underline;
+}
+
+#resources {
+    margin-bottom: 40px;
+}
+
+#bu-logo, #ut-logo {
+    width: 25%; 
+    max-width: 100%;
+    height: auto;
+}
+
+.marathon-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.marathon-gallery img {
+    width: 18%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 750px) {
+    .marathon-gallery img {
+        width: 45%;
+        max-width: none;
+    }
+}

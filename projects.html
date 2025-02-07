@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Francisco Moguel</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body id="dessert-aesthetic">
+    <div class="page-wrapper">
+        <header id="header">
+            <div class="header-container">
+                <h1 id="page-title">Projects</h1>
+                <p class="subtitle">Academic and work projects I've participated in.</p>
+            </div>
+        </header>
+
+        <div class="container">
+            <nav id="navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" target="_self" title="Home">Home</a></li>
+                    <li><a href="education.html" target="_self" title="Education">Education</a></li>
+                    <li><a href="experience.html" target="_self" title="Experience">Experience</a></li>
+                    <li><a href="certifications.html" target="_self" title="Certifications">Certifications</a></li>
+                    <li><a href="achievements.html" target="_self" title="Achievements">Achievements</a></li>
+                    <li><a href="projects.html" target="_self" title="Projects">Projects</a></li>
+                </ul>
+            </nav>
+
+            <main id="main-content">
+                <div class="section" id="github-projects">
+                    <h2>GitHub Projects</h2>
+
+                    <div class="project">
+                        <h3>CS506 Final Project: Box Office Revenue Prediction</h3>
+                        <p>Used machine learning to predict movie revenues with XGBoost and a Flask web app.</p>
+                        <a href="https://github.com/sobo3038/CS506-final-project" target="_blank">GitHub Link</a>
+                    </div>
+
+                    <div class="project">
+                        <h3>BA476 Final Project: Flight Delay Prediction</h3>
+                        <p>Analyzed flight delays with Random Forest, Lasso, and Neural Networks.</p>
+                        <a href="https://github.com/fjmoguel/BA476-Final_Project" target="_blank">GitHub Link</a>
+                    </div>
+
+                    <div class="project">
+                        <h3>CS411 Project: Twitter & Ticketmaster API</h3>
+                        <p>Developed a full-stack web app that recommends events based on Twitter activity.</p>
+                        <a href="https://github.com/vkang6378/CS411_project" target="_blank">GitHub Link</a>
+                    </div>
+
+                    <div class="project">
+                        <h3>CS350 Distributed Systems</h3>
+                        <p>Implemented RAFT algorithm, MapReduce, and built distributed applications.</p>
+                        <a href="https://github.com/fjmoguel/CS_350_BostonU" target="_blank">GitHub Link</a>
+                    </div>
+
+                    <div class="project">
+                        <h3>MBTA Subway System Run</h3>
+                        <p>Developed a Python app to map out optimal routes for running the entire MBTA subway system.</p>
+                        <a href="https://github.com/fjmoguel/MBTA_RUN_CODE" target="_blank">GitHub Link</a>
+                    </div>
+                </div>
+
+                <div class="section" id="calculator-section">
+                    <h2>JavaScript Calculator</h2>
+                    <p>Use this simple calculator for basic arithmetic and exponentiation.</p>
+                
+                    <div id="calculator">
+                        <label for="num1">First Number:</label><input type="text" id="num1" placeholder="Enter number">
+                        <label for="num2">Second Number:</label><input type="text" id="num2" placeholder="Enter number">
+                        <div id="button-container">
+                            <button onclick="addition()">+</button>
+                            <button onclick="subtraction()">-</button>
+                            <button onclick="multiplication()">*</button>
+                            <button onclick="division()">\</button>
+                            <button onclick="power()">**</button>
+                            <button onclick="clearCalc()">Clear</button>
+                        </div>
+                        <div id="output-container">
+                            <h3 id="output"></h3>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+            </main>
+        </div>
+
+        <footer id="footer">
+            <p>&copy; All Rights Reserved by Francisco Moguel. <a href="credits.html" target="_self" title="Credits">Credits</a></p>
+        </footer>
+
+        <script src="calculator.js"></script>
+    </div>
+</body>
+</html>
